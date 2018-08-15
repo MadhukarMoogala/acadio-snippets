@@ -2,25 +2,25 @@
 **Workitem Json**
 ```json
 {
-	"Arguments": {
-		"InputArguments": [
-			{
-				"Resource":"https://s3-us-west-2.amazonaws.com/xiaodongforgetestio/Example+-+Copy.dwg",
-				"Name": "HostDwg"
-			}	,
-			{
-				"Resource":"https://madhukar-fda.s3.us-west-2.amazonaws.com/pdfgen.scr",
-				"Name": "MyScript"
-			}
-		],
-		"OutputArguments": [
-			{
-				"Name": "MyResult",
-				"HttpVerb": "POST"
-			}
-		]
-	},
-	"ActivityId": "BigFontSubst"
+  "Arguments": {
+    "InputArguments": [
+      {
+        "Resource": "https://s3-us-west-2.amazonaws.com/xiaodongforgetestio/Example+-+Copy.dwg",
+        "Name": "HostDwg"
+      },
+      {
+        "Resource": "https://madhukar-fda.s3.us-west-2.amazonaws.com/pdfgen.scr",
+        "Name": "MyScript"
+      }
+    ],
+    "OutputArguments": [
+      {
+        "Name": "MyResult",
+        "HttpVerb": "POST"
+      }
+    ]
+  },
+  "ActivityId": "BigFontSubst"
 }
 ```
 **Activity Json**
