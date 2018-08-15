@@ -57,20 +57,24 @@ namespace FPD.Compare
             doc.SendStringToExecute("COMPAREWINDOW\n", true, false, true);
 
         }
-        [CommandMethod("FDACOMMANDS","COMPAREWINDOW", CommandFlags.Transparent)]
+        [CommandMethod("FDACOMMANDS", "ISDWGSIMILAR", CommandFlags.Transparent)]
         public static void CompareDrawing()
         {
             var doc = Application.DocumentManager.MdiActiveDocument;
             var db = doc.Database;
             var ed = doc.Editor;
+            var promptResult = ed.GetString("Select Drawing To Compare With");
+            if (promptResult.Status != PromptStatus.OK) return;
+            var drawingToCompareWith = promptResult.StringResult;
             ed = Application.DocumentManager.MdiActiveDocument.Editor;
             using (OpenCloseTransaction o = new OpenCloseTransaction())
             {
-                BlockReference b = o.GetObject(ed.SelectLastEnt(), OpenMode.ForRead) as BlockReference;
+               /*Here your logic code to compare two drawings*/
 
+                /*output.txt / json is pushed to your cloud storage as provided in workitem json*/
                 using (var writer = File.CreateText("output.txt"))
                 {
-                    if (b != null)
+                    if (b != null) /*b value is result of your compare*/
                     {
                         writer.WriteLine("TRUE Drawings are same");
                     }
