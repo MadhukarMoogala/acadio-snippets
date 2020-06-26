@@ -1,0 +1,99 @@
+[06/26/2020 04:28:37] Job information:
+"CommandLine":[
+  "$(engine.path)\\accoreconsole.exe /i $(args[inputFile].path) /s $(settings[script].path)"
+]
+"Settings":{
+  "script": {
+    "value": "DXFOUT\nresult.dxf\n\n"
+  },
+  "dasreportfaileduploadoptional": {
+    "value": "true",
+    "isEnvironmentVariable": true
+  }
+}
+"Id":"6a7404dd2d514a3eb84eae829277a7cb"
+"ActivityId":"adskForgeDXFOUt.Adsk_DXFOUT_v3+prod"
+"Engine.Id":"Autodesk.AutoCAD!26"
+"Apps": [
+]
+"BoundArguments":{
+  "inputFile": {
+    "localName": "$(HostDwg)",
+    "url": "https://developer.api.autodesk.com/Masked:fe0/RqAyeilR2tviFIMI3PRNWnw="
+  },
+  "outputFile": {
+    "localName": "result.dxf",
+    "url": "https://developer.api.autodesk.com/Masked:lFQNnPlbE60T7kapXn6huK9ljpA=",
+    "verb": "put"
+  },
+  "onProgress": {
+    "ondemand": true,
+    "url": "https://wlnr5sjl3a.execute-api.us-east-1.amazonaws.com/Masked:UK/Z3b5X3xUWxXiH6C9r9i9UlRU=",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-das-authorize": "awssigv4(us-east-1)",
+      "x-ads-token-data": "{\"access_token\":{\"client_id\":\"oE7L8G4EZhckC5fITtI7z1pjWVP1bEww\"},\"scope\":\"code:all\",\"expires_in\":3598,\"client_id\":\"oE7L8G4EZhckC5fITtI7z1pjWVP1bEww\"}"
+    },
+    "verb": "put"
+  }
+}
+"Quotas":{
+  "limitProcessingTimeSec": 100,
+  "limitTotalUncompressedAppsSizeInMB": 500
+}
+[06/26/2020 04:28:37] Starting work item 6a7404dd2d514a3eb84eae829277a7cb
+[06/26/2020 04:28:37] Start download phase.
+[06/26/2020 04:28:37] Start downloading input: verb - 'GET', url - 'https://developer.api.autodesk.com/oss/v2/signedresources/c0b7a984-3e57-496b-b5a1-e5c4b79a9a95?region=US'
+[06/26/2020 04:28:37] '1177449' bytes have been written to T:\Aces\Jobs\6a7404dd2d514a3eb84eae829277a7cb\360154b138d6435c9082b7f26818a46e.dwg.
+[06/26/2020 04:28:37] End downloading file 'https://developer.api.autodesk.com/oss/v2/signedresources/c0b7a984-3e57-496b-b5a1-e5c4b79a9a95?region=US'.
+[06/26/2020 04:28:37] End download phase successfully.
+[06/26/2020 04:28:39] Start preparing script and command line parameters.
+[06/26/2020 04:28:39] Command line: [ /i T:\Aces\Jobs\6a7404dd2d514a3eb84eae829277a7cb\360154b138d6435c9082b7f26818a46e.dwg /s T:\Aces\Jobs\6a7404dd2d514a3eb84eae829277a7cb\setting_script.scr]
+[06/26/2020 04:28:39] End preparing script and command line parameters.
+[06/26/2020 04:28:39] Start script phase.
+[06/26/2020 04:28:39] ### Command line arguments: /isolate HKEY_CURRENT_USER\SOFTWARE\AppDataLow\Software\Autodesk\CoreUser\WorkItem_6a7404dd2d514a3eb84eae829277a7cb "T:\Aces\Jobs\6a7404dd2d514a3eb84eae829277a7cb\userdata" /exe "T:\Aces\AcesRoot\24.0\coreEngine\Exe\accoreconsole.exe"  /i T:\Aces\Jobs\6a7404dd2d514a3eb84eae829277a7cb\360154b138d6435c9082b7f26818a46e.dwg /s T:\Aces\Jobs\6a7404dd2d514a3eb84eae829277a7cb\setting_script.scr.
+[06/26/2020 04:28:39] Start AutoCAD Core Engine standard output dump.
+[06/26/2020 04:28:39] Redirect stdout (file: T:\Aces\Jobs\6a7404dd2d514a3eb84eae829277a7cb\tmp\accc17602).
+[06/26/2020 04:28:39] AcCoreConsole: StdOutConsoleMode: processed-output: disabled,auto
+[06/26/2020 04:28:39] AutoCAD Core Engine Console - Copyright 2020 Autodesk, Inc.  All rights reserved. (R.47.Z.160)
+[06/26/2020 04:28:39] Execution Path:
+[06/26/2020 04:28:39] T:\Aces\AcesRoot\24.0\coreEngine\Exe\accoreconsole.exe
+[06/26/2020 04:28:39] Current Directory: T:\Aces\Jobs\6a7404dd2d514a3eb84eae829277a7cb
+[06/26/2020 04:28:39] Isolating to regkey=HKEY_CURRENT_USER\SOFTWARE\AppDataLow\Software\Autodesk\CoreUser\WorkItem_6a7404dd2d514a3eb84eae829277a7cb, userDataFolder=T:\Aces\Jobs\6a7404dd2d514a3eb84eae829277a7cb\userdata.
+[06/26/2020 04:28:40] Version Number: R.47.Z.160 (UNICODE)
+[06/26/2020 04:28:40] Loading Mechanical modules.....
+[06/26/2020 04:28:42] Loader application completed
+[06/26/2020 04:28:43] Regenerating model.
+[06/26/2020 04:28:43] Auditing Mechanical Data...
+[06/26/2020 04:28:43] Number of errors found: 0    Number of errors fixed: 0
+[06/26/2020 04:28:43] Auditing Mechanical Data complete.
+[06/26/2020 04:28:43] AutoCAD menu utilities loaded.
+[06/26/2020 04:28:43] Command:
+[06/26/2020 04:28:43] Command:
+[06/26/2020 04:28:43] Command:
+[06/26/2020 04:28:43] Command: DXFOUT
+[06/26/2020 04:28:43] Enter DXF file name <T:\Aces\Jobs\6a7404dd2d514a3eb84eae829277a7cb\360154b138d6435c9082b7f26818a46e.dxf>: result.dxf
+[06/26/2020 04:28:43] Current DXF settings: Precision= 16 Format= ASCII Preview= No Version= 2018
+[06/26/2020 04:28:43] Enter decimal places of accuracy (0 to 16) or [Binary/select Objects/Preview/Version] <16>:
+[06/26/2020 04:28:44] End AutoCAD Core Engine standard output dump.
+[06/26/2020 04:28:44] Error: AutoCAD Core Console output contains error(s).
+[06/26/2020 04:28:44] End script phase.
+[06/26/2020 04:28:44] Start upload phase.
+[06/26/2020 04:28:44] Uploading 'T:\Aces\Jobs\6a7404dd2d514a3eb84eae829277a7cb\result.dxf': verb - 'PUT', url - 'https://developer.api.autodesk.com/oss/v2/signedresources/adeb325e-5cb5-495f-b01f-310517798951?region=US'
+[06/26/2020 04:28:45] End upload phase successfully.
+[06/26/2020 04:28:45] Job finished with result Succeeded
+[06/26/2020 04:28:45] Job Status:
+{
+  "status": "success",
+  "reportUrl": "https://dasprod-store.s3.amazonaws.com/workItem/adskForgeDXFOUt/6a7404dd2d514a3eb84eae829277a7cb/report.txt?AWSAccessKeyId=ASIATGVJZKM3NZ7RL4KT&Expires=1593149417&x-amz-security-token=IQoJb3JpZ2luX2VjECwaCXVzLWVhc3QtMSJHMEUCIQD39053yQCJGNtaragQAfMmBhQS2G9WkpxpQj%2Fbf6tfFQIgCUcjyPWUPcCLuThIENOh5LVB2AljZxuOZ%2Bs1DaF%2BMogq3gEItP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgwyMjA0NzMxNTIzMTAiDNrw8%2Bm17fVE1G9ZByqyAbDdna8wgrahe2n5MueD75BfcwW%2FDaAQVL4R6GsxIrmwx77zhU4z%2FfaeMRqLlSIDHpxu16afXiAkGsjJcVYcvXbTB39bw9V4i3iI4pGpIsDOceDMqcDWvdS1qp%2BknIRb7L4SfqIfzePJrD8sED4JmR8Mzo8JQ5FawkZvvyzeFiLfxMoiUGbWP1ascozZd1pmB2DhOoJy9D%2Fsvi6iQCGZ5KY6fkTJvXbLFfLnoJ1IOTJ0ZeMw483V9wU64AH39xQrwWnNff5Az7NcdE4L3M00icwiKmUNZqY0btNjaW99Z70KkYjt%2FsJUzziahnVWsj%2BsCrP2Zh8J0xpIxCa031JvnFyQUoO1UQRPGMN186GFrUj4boDHFkIsZOOSr93ymdR5hFPC9ofDbKsBxLkDLyn4LWQDF7VI4B6TEpPqCFxyccmFWlybUPjcCqEVfrefh5WNAp35qiWSe27RTQg2ke%2BWd9IFAJmomd5mrmNMvIhl0oN%2BNu8JhEeZEvjym3MYiOblW%2FHUg72RrFwp9ycX%2FfW9VtKbNS3j%2F7zvmDMhgg%3D%3D&Signature=ZZCvPkKxdTEbAx%2BEb295qTkqDFU%3D",
+  "stats": {
+    "timeQueued": "2020-06-26T04:28:37.4925094Z",
+    "timeDownloadStarted": "2020-06-26T04:28:37.7334519Z",
+    "timeInstructionsStarted": "2020-06-26T04:28:39.4723279Z",
+    "timeInstructionsEnded": "2020-06-26T04:28:44.7277379Z",
+    "timeUploadEnded": "2020-06-26T04:28:45.3690087Z",
+    "bytesDownloaded": 1177449,
+    "bytesUploaded": 8694841
+  },
+  "id": "6a7404dd2d514a3eb84eae829277a7cb"
+}
